@@ -4832,7 +4832,7 @@ class OctoslackPlugin(
                 )
             elif slack_client3:
                 upload_rsp = slack_client3.files_upload_v2(
-                    channels=channels,
+                    channel=channels,
                     filename=dest_filename,
                     title=file_description,
                     file=file_to_upload,
